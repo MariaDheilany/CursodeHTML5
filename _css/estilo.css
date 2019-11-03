@@ -10,8 +10,9 @@ p {
 
 /* Formatação de imagens com legendas */
 figure.foto-legenda{
-    border: 8px solid white;
-    box-shadow: 1px 1px 4px black;
+    position: relative; /*posição relativa referente a imagem na página*/
+    border: 8px solid white;  /*borda*/
+    box-shadow: 1px 1px 4px black; /*sombra*/
 }
 
 figure.foto-legenda img{
@@ -19,7 +20,19 @@ figure.foto-legenda img{
     height: 100%;
 }
 
-figure.foto-legenda figcaption {
-    position: absolute;
-    top: 0px;;
+figure.foto-legenda figcaption {/*legenda da imagem*/
+    opacity: 0; /*oculta a legenda que está em cima da foto*/
+    position: absolute; /*posição absoluta referente ao 'PAI' LINHA 12*/
+    top: 0px;
+    background-color: rgba(0,0,0,.4);
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box; /*boxer dentro da imagem*/
+    transition: opacity 1s;
+}
+
+figure.foto-legenda:hover figcaption{ /*HOVER formatação específica que mostra a leenda com o passar do mouse*/
+    opacity: 1; /*exibe a legenda*/
 }
