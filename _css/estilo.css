@@ -33,6 +33,6 @@ figure.foto-legenda figcaption {/*legenda da imagem*/
     transition: opacity 1s;
 }
 
-figure.foto-legenda:hover figcaption{ /*HOVER formatação específica que mostra a leenda com o passar do mouse*/
+figure.foto-legenda:hover figcaption{ /*HOVER formatação específica que mostra a legenda com o passar do mouse*/
     opacity: 1; /*exibe a legenda*/
 }
