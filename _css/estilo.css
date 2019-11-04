@@ -1,6 +1,6 @@
 @charset "UTF-8";
 body {
-    background-color: rgb(245, 247, 248);
+    background-color: rgb(245, 247, 248);  /*cor de fundo*/
     color: black;
 }
 p {
@@ -35,4 +35,28 @@ figure.foto-legenda figcaption {/*legenda da imagem*/
 
 figure.foto-legenda:hover figcaption{ /*HOVER formatação específica que mostra a legenda com o passar do mouse*/
     opacity: 1; /*exibe a legenda*/
+}
+
+/*FORMATAÇÃO DO MENU*/
+nav#menu {
+    display: block;
+}
+
+nav#menu ul {
+    list-style: none;
+    text-transform: uppercase; /*coloca todo o texto em caixa alta*/
+    position: absolute; /*posição dentro de todo o site*/
+    top: -20px;
+    left: 300px;
+}
+
+nav#menu li {
+    display: inline-block; /*faz com que um bloco seja exibido na msma linha*/
+    background-color: #dddddd;
+    padding: 10px;  /*espaço dentro do objeto*/
+    margin: 2px;    /*espaço fora do objeto*/
+}
+
+nav#menu h1 {
+    display: none; /*escondendo o h1*/
 }
